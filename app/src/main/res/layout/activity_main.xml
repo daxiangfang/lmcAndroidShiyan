@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/button2"
         android:layout_width="130dp"
@@ -70,11 +71,18 @@
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
+=======
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+>>>>>>> 8bd7eba4e5fd8abdda694afe3c2dda15b6417395
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
@@ -374,4 +382,6 @@
         tools:ignore="MissingConstraints" />
 
 
+=======
+>>>>>>> 8bd7eba4e5fd8abdda694afe3c2dda15b6417395
 </androidx.constraintlayout.widget.ConstraintLayout>

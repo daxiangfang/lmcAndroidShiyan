@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">My Application0000</string>
 
     <string name="hello_table_layout">Hello TableLayout</string>
@@ -17,4 +18,7 @@
     <string name="export">X Export</string>
     <string name="ctrl_e">Ctrl+E</string>
     <string name="quit">Quit
+=======
+    <string name="app_name">My20241App</string>
+>>>>>>> 8bd7eba4e5fd8abdda694afe3c2dda15b6417395
 </resources>
