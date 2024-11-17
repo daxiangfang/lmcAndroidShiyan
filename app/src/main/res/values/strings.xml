@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application0000</string>
+
+    <string name="hello_table_layout">Hello TableLayout</string>
+    <string name="button1_text">Button 1</string>
+    <string name="button2_text">Button 2</string>
+    <string name="button3_text">Button 3</string>
+    <string name="four_three">Four Three</string>
+    <string name="four_four">Four Four</string>
+    <string name="open">Open…</string>
+    <string name="ctrl_o">ctrl+O</string>
+    <string name="save">Save…</string>
+    <string name="ctrl_s">Ctrl+S</string>
+    <string name="saveas">Save AS…</string>
+    <string name="ctrl_shift_s">Ctrl+Shift+S</string>
+    <string name="mport">X Import</string>
+    <string name="export">X Export</string>
+    <string name="ctrl_e">Ctrl+E</string>
+    <string name="quit">Quit
+</resources>

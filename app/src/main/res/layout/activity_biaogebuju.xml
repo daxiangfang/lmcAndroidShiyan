@@ -1,0 +1,79 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0">
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/open" />
+
+
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/ctrl_o" />
+
+    </TableRow>
+
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/save" />
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/ctrl_s" />
+    </TableRow>
+
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/saveas" />
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/ctrl_shift_s" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/mport" />
+
+    </TableRow>
+
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/export" />
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/ctrl_e" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow tools:ignore="UselessParent">
+        <TextView
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:text="@string/quit" />
+    </TableRow>
+
+</TableLayout>
