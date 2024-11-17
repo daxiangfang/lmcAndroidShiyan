@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ListView</string>
+    <string name="lion">Lion</string>
+    <string name="tiger">Tiger</string>
+    <string name="todo">TODO</string>
+    <string name="monkey">Monkey</string>
+    <string name="dog">Dog</string>
+    <string name="elephant">Elephant</string>
+    <string name="cat">Cat</string>
+    <string name="ceshi">ceshi\n</string>
+
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lion"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lion"
+            tools:ignore="ContentDescription">
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray">
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/textTiger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tiger"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageTiger"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/tiger">
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray">
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/textMonkey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monkey"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageMonkey"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/monkey"
+            tools:ignore="ContentDescription">
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray">
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/textDog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dog"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageDog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dog"
+            tools:ignore="ContentDescription">
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray">
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/textCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cat"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageCat"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cat"
+            tools:ignore="ContentDescription">
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray">
+    </View>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/textElephant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/elephant"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/imageElephant"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/elephant"
+            tools:ignore="ContentDescription">
+        </ImageView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray">
+    </View>
+
+</LinearLayout>
