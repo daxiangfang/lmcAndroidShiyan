@@ -1,0 +1,6 @@
+com.example.android.notepad.test.app-jetified-annotation-experimental-1.3.0-0 D:\development\Android\gradle\caches\transforms-4\2f100dbb00e922821dda4743b029439f\transformed\jetified-annotation-experimental-1.3.0\res
+com.example.android.notepad.test.app-jetified-core-1.5.0-1 D:\development\Android\gradle\caches\transforms-4\bee312a1143682abcddfad0c2e2c3a77\transformed\jetified-core-1.5.0\res
+com.example.android.notepad.test.app-androidTest-2 D:\development\Codes\AndroidStudioProjects\NotePad\app\build\generated\res\resValues\androidTest\debug
+com.example.android.notepad.test.app-mergeDebugAndroidTestResources-3 D:\development\Codes\AndroidStudioProjects\NotePad\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.android.notepad.test.app-mergeDebugAndroidTestResources-4 D:\development\Codes\AndroidStudioProjects\NotePad\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.android.notepad.test.app-debugAndroidTest-5 D:\development\Codes\AndroidStudioProjects\NotePad\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="menu_search" type="id"/>
+    <item name="menu_theme" type="id"/>
+    <item name="menu_change_background" type="id"/>
+    <item name="menu_paste" type="id"/>
+    <item name="menu_add" type="id"/>
+</resources>

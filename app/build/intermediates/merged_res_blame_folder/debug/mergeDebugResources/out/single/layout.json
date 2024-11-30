@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.example.android.notepad.app-mergeDebugResources-43:/layout/notelist_main.xml",
+        "source": "com.example.android.notepad.app-main-46:/layout/notelist_main.xml"
+    },
+    {
+        "merged": "com.example.android.notepad.app-mergeDebugResources-43:/layout/noteslist_item.xml",
+        "source": "com.example.android.notepad.app-main-46:/layout/noteslist_item.xml"
+    },
+    {
+        "merged": "com.example.android.notepad.app-mergeDebugResources-43:/layout/note_editor.xml",
+        "source": "com.example.android.notepad.app-main-46:/layout/note_editor.xml"
+    },
+    {
+        "merged": "com.example.android.notepad.app-mergeDebugResources-43:/layout/title_editor.xml",
+        "source": "com.example.android.notepad.app-main-46:/layout/title_editor.xml"
+    }
+]

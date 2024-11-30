@@ -37,6 +37,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
  * This Activity handles "editing" a note, where editing is responding to
@@ -57,11 +61,11 @@ public class NoteEditor extends Activity {
      * Creates a projection that returns the note ID and the note contents.
      */
     private static final String[] PROJECTION =
-        new String[] {
-            NotePad.Notes._ID,
-            NotePad.Notes.COLUMN_NAME_TITLE,
-            NotePad.Notes.COLUMN_NAME_NOTE
-    };
+            new String[] {
+                    NotePad.Notes._ID,
+                    NotePad.Notes.COLUMN_NAME_TITLE,
+                    NotePad.Notes.COLUMN_NAME_NOTE
+            };
 
     // A label for the saved state of the activity
     private static final String ORIGINAL_CONTENT = "origContent";
@@ -81,7 +85,10 @@ public class NoteEditor extends Activity {
     /**
      * Defines a custom EditText View that draws lines between each line of text that is displayed.
      */
-    public static class LinedEditText extends EditText {
+    /*
+     * android 12 not advise use EditText so use AppCompatEditText
+     * */
+    public static class LinedEditText extends androidx.appcompat.widget.AppCompatEditText {
         private Rect mRect;
         private Paint mPaint;
 
@@ -187,7 +194,7 @@ public class NoteEditor extends Activity {
             // set the result to be returned.
             setResult(RESULT_OK, (new Intent()).setAction(mUri.toString()));
 
-        // If the action was other than EDIT or INSERT:
+            // If the action was other than EDIT or INSERT:
         } else {
 
             // Logs an error that the action was not understood, finishes the Activity, and
@@ -206,11 +213,11 @@ public class NoteEditor extends Activity {
          * android.content.AsyncQueryHandler or android.os.AsyncTask.
          */
         mCursor = managedQuery(
-            mUri,         // The URI that gets multiple notes from the provider.
-            PROJECTION,   // A projection that returns the note ID and note content for each note.
-            null,         // No "where" clause selection criteria.
-            null,         // No "where" clause selection values.
-            null          // Use the default sort order (modification date, descending)
+                mUri,         // The URI that gets multiple notes from the provider.
+                PROJECTION,   // A projection that returns the note ID and note content for each note.
+                null,         // No "where" clause selection criteria.
+                null,         // No "where" clause selection values.
+                null          // Use the default sort order (modification date, descending)
         );
 
         // For a paste, initializes the data from clipboard.
@@ -272,7 +279,7 @@ public class NoteEditor extends Activity {
                 Resources res = getResources();
                 String text = String.format(res.getString(R.string.title_edit), title);
                 setTitle(text);
-            // Sets the title to "create" for inserts
+                // Sets the title to "create" for inserts
             } else if (mState == STATE_INSERT) {
                 setTitle(getText(R.string.title_create));
             }
@@ -295,10 +302,10 @@ public class NoteEditor extends Activity {
                 mOriginalContent = note;
             }
 
-        /*
-         * Something is wrong. The Cursor should always contain data. Report an error in the
-         * note.
-         */
+            /*
+             * Something is wrong. The Cursor should always contain data. Report an error in the
+             * note.
+             */
         } else {
             setTitle(getText(R.string.error_title));
             mText.setText(getText(R.string.error_message));
@@ -370,7 +377,7 @@ public class NoteEditor extends Activity {
             } else if (mState == STATE_INSERT) {
                 updateNote(text, text);
                 mState = STATE_EDIT;
-          }
+            }
         }
     }
 
@@ -390,7 +397,7 @@ public class NoteEditor extends Activity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.editor_options_menu, menu);
 
-        // Only add extra menu items for a saved note 
+        // Only add extra menu items for a saved note
         if (mState == STATE_EDIT) {
             // Append to the
             // menu items for any other activities that can do stuff with it
@@ -432,7 +439,7 @@ public class NoteEditor extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle all of the possible menu actions.
-        switch (item.getItemId()) {
+        /*switch (item.getItemId()) {
         case R.id.menu_save:
             String text = mText.getText().toString();
             updateNote(text, null);
@@ -445,6 +452,19 @@ public class NoteEditor extends Activity {
         case R.id.menu_revert:
             cancelNote();
             break;
+        }*/
+        int itemId = item.getItemId();
+
+        if (itemId == R.id.menu_save) {
+            String text = mText.getText().toString();
+            updateNote(text, null);
+            /* updateTime();*/
+            finish();
+        } else if (itemId == R.id.menu_delete) {
+            deleteNote();
+            finish();
+        } else if (itemId == R.id.menu_revert) {
+            cancelNote();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -532,14 +552,14 @@ public class NoteEditor extends Activity {
 
             // If no title was provided as an argument, create one from the note text.
             if (title == null) {
-  
+
                 // Get the note's length
                 int length = text.length();
 
                 // Sets the title by getting a substring of the text that is 31 characters long
                 // or the number of characters in the note plus one, whichever is smaller.
                 title = text.substring(0, Math.min(30, length));
-  
+
                 // If the resulting length is more than 30 characters, chops off any
                 // trailing spaces
                 if (length > 30) {
@@ -575,7 +595,7 @@ public class NoteEditor extends Activity {
                 values,  // The map of column names and new values to apply to them.
                 null,    // No selection criteria are used, so no where columns are necessary.
                 null     // No where columns are used, so no where arguments are necessary.
-            );
+        );
 
 
     }

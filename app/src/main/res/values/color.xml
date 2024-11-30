@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="search_text_color">#FFEB3B</color> <!-- 输入文字颜色 (黄色) -->
+        <color name="search_hint_color">#757575</color> <!-- 提示文字颜色 (灰色) -->
+</resources>
+
+
+
